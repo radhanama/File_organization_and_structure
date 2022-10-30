@@ -8,7 +8,9 @@ e para executar:
 
 ´./busca "Cep_procurarado"´
 
-ao execeutar se esse cep existir na base de dados ele retornará o endereço referente ao cep.
+é necessario também um arquivo com os cep ordenados que será a base de dados para o programa efetuar a busca.
+
+Ao execeutar se esse cep existir na base de dados ele retornará o endereço referente ao cep.
 
 Ex: 
 RUA 1                                                                   

@@ -32,6 +32,11 @@ int main(int argc, char**argv)
 	}
 	printf("Tamanho da Estrutura: %ld\n\n", sizeof(Endereco));
 	f = fopen("./cep_ordenado.dat","rb");
+	if(!f)
+	{
+		fprintf(stderr,"Arquivo ./cep_ordenado.dat não pode ser aberto para leitura\n");
+		return 1;
+	}
 	fseek(f, 0, SEEK_END);
 	size = ftell(f);	// get the size of file
 	end = (size / sizeof(Endereco))-1; // get number of documents in the file
